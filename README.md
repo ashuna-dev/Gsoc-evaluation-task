@@ -93,6 +93,10 @@ Here, you will find a **complete energy analysis** of your training code, includ
 - Cumulative energy usage
 - System and hardware details
 
+  
+  <img width="640" alt="image" src="https://github.com/user-attachments/assets/1639fcf1-4d03-4838-bf0b-87c432684f4e" />
+
+
 ---
 
 ## Running Jupyter Notebooks
@@ -149,5 +153,3 @@ Ensure dependencies are installed before executing.
 - Integrated **CodeCarbon** into the training script.
 - Collected emissions data in **`emissions.csv`**.
 - Launched **CarbonBoard** for real-time energy tracking.
-
-This ensures seamless tracking of AI energy consumption, helping to make deep learning more sustainable.
