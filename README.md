@@ -105,6 +105,39 @@ This repository includes Jupyter notebooks for training deep learning models and
 Ensure dependencies are installed before executing.
 
 ---
+## Troubleshooting & Error Handling
+
+### Common CodeCarbon Issues
+
+1. **Missing Dependencies**
+   - Error: `ModuleNotFoundError: No module named 'codecarbon'`
+   - Solution: Run `pip install codecarbon` or `python -m pip install codecarbon`
+
+2. **Dashboard Not Launching**
+   - Error: `The specified port (3333) is already in use`
+   - Solution: Change the port number: `carbonboard --filepath="emissions.csv" --port=3334`
+
+3. **GPU Detection Issues**
+   - Error: `Could not initialize NVIDIA energy readings: no GPUs detected` 
+   - Solution: Ensure CUDA is properly installed and GPU is accessible with `nvidia-smi`
+
+4. **Permissions Issues**
+   - Error: `Permission denied when writing to emissions.csv`
+   - Solution: Change output directory to one with write permissions or run with elevated privileges
+
+5. **Memory Issues During Training**
+   - Error: `CUDA out of memory`
+   - Solution: Reduce batch size (currently set to 32) or image size in the code
+
+### Kaggle-Specific Issues
+
+1. **Internet Access**
+   - Ensure "Internet" is enabled in Kaggle notebook settings if downloading models
+   
+2. **Session Timeouts**
+   - Kaggle sessions typically timeout after 12 hours
+   - For long-running jobs, save checkpoints regularly
+
 
 ## Results & Logs
 - `emissions.csv` - Emissions data from CodeCarbon.
