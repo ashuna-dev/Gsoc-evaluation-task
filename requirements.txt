@@ -1,0 +1,15 @@
+torch
+torchvision
+codecarbon
+dash
+dash-bootstrap-components
+fire
+numpy
+pandas
+matplotlib
+scipy
+seaborn
+tqdm
+ipykernel
+jupyter
+scikit-learn
