@@ -95,8 +95,8 @@ Here, you will find a **complete energy analysis** of your training code, includ
 ## Running Jupyter Notebooks
 This repository includes Jupyter notebooks for training deep learning models and tracking their energy consumption.
 
-- **[ResNet18 Profiling](notebooks/resnet18.ipynb)** - Measures energy usage during ResNet18 training.
-- **Efficientnet** - Analyzes the energy efficiency of EfficientNet.
+- **ResNet-18.ipynb** - Measures energy usage during ResNet18 training.
+- **Efficientnet(1).ipynb** - Analyzes the energy efficiency of EfficientNet.
 
 
 Ensure dependencies are installed before executing.
