@@ -28,6 +28,8 @@ from codecarbon import EmissionsTracker
 ### **Integrate CodeCarbon into Your Code**
 Add the following snippet to your training script **before model training starts**:  
 
+# The Repo already has these commands set up. If you are using Resnet18 or EfficientNet. Move to step 2
+
 ```python
 from codecarbon import EmissionsTracker
 import time
@@ -55,7 +57,7 @@ This will **automatically save** the CO₂ emissions data in `emissions.csv`. Yo
 
 ---
 
-### **Run CarbonBoard for Visualization**
+### **Step-2 Run CarbonBoard for Visualization**
 Once training is complete, open a **command line terminal** and install the required packages:
 
 ```bash
@@ -67,6 +69,7 @@ python -m pip install codecarbon dash dash-bootstrap-components fire
 ```
 
 Now, start **CarbonBoard**, which will visualize the `emissions.csv` data:
+You have to download emissions.csv from kaggle output section to run this 
 
 ```bash
 carbonboard --filepath="emissions.csv" --port=3333
